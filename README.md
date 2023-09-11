@@ -4,10 +4,10 @@
 </h3>
 
 source code and resources of personal webpage, https://shivamjaiswal.free.nf.<br>
-Contains:
-	Home page
-	Project page
-	Photography page
-	Blog page
-	Styling css files
-	resources: illustrations, icons, documents, videos
+Contains:<br>
+	&emsp;Home page<br>
+	&emsp;Project page<br>
+	&emsp;Photography page<br>
+	&emsp;Blog page<br>
+	&emsp;Styling css files<br>
+	&emsp;resources: illustrations, icons, documents, videos<br>
