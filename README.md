@@ -5,9 +5,9 @@
 
 source code and resources of personal webpage, https://shivamjaiswal.free.nf.<br>
 Contains:<br>
-	&emsp;Home page<br>
-	&emsp;Project page<br>
-	&emsp;Photography page<br>
-	&emsp;Blog page<br>
-	&emsp;Styling css files<br>
-	&emsp;resources: illustrations, icons, documents, videos<br>
+	&emsp;&emsp;Home page<br>
+	&emsp;&emsp;Project page<br>
+	&emsp;&emsp;Photography page<br>
+	&emsp;&emsp;Blog page<br>
+	&emsp;&emsp;Styling css files<br>
+	&emsp;&emsp;&emsp;&emsp;resources: illustrations, icons, documents, videos<br>
