@@ -1,0 +1,684 @@
+@import url("../style_sheets/animations/index_animation.css");
+
+
+
+
+
+
+/* For laptop display */
+@media screen and (orientation: landscape){
+
+    body{
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+
+        font-family:'Times New Roman', Times, serif;
+    }
+
+    .workspace{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior:auto;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .section_front{
+        width: 100vw;
+        height: 100vh;
+        background-size: 100vw;
+        scroll-snap-align: start;
+
+        background-image: url("../resources/media/index/pictures/laptop_top.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .qutation{
+        position: absolute;
+        color: rgb(255,174,0);
+        left: 50vw;
+        top: 12vh;
+        transform: translate(-50%, -50%);
+        font-size: 1.5vw;
+    }
+
+    #om_space{
+        border-style: solid;
+        border-color: black;
+        border-bottom-width: 3vh;
+        color: red;
+    }
+
+    .about{
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+        font-size: 1.2vw;
+        width: 50vw;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    .about_greet{
+        font-size: 1.3vw;
+    }
+
+    .hari_om{
+        font-size: 1.5vw;
+    }
+
+    .first_name{
+        font-size: 2.5vw;
+
+    }
+    .last_name{
+        color: skyblue;
+        font-size: 5vw;
+    }
+
+    #tab{
+        top: 0vh;
+        position: fixed;
+        width: 100vw;
+        height: 8vh;
+        overflow: hidden;
+        z-index: 9;
+        background-color: black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: top 0.5s;
+    }
+
+    #tab button:hover{
+        font-size: 1.5vw;
+        cursor: pointer;
+        opacity: 0.75;
+        font-weight: 500;
+    }
+
+    #tab button.active{
+        font-size: 1.7vw;
+        /* margin-left: 1vh;
+        margin-right: 1vh; */
+        opacity: 1;
+        font-weight: 900;
+        animation: fadeEffect_tabClick 0.9s;
+        color: red;
+    }
+
+    .tablinks{
+        height: 100vw;
+        position: relative;
+        width: 11vw;
+        color: white;
+        background-color: black;
+        border: none;
+        font-size: 1.25vw;
+        font-family: 'Times New Roman', Times, serif;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0.5;
+    }
+
+    .tabcontent{
+        display: none;
+    }
+
+    .section_contents{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        /* background-size: cover; */
+        scroll-snap-align: end;
+        text-align: justify;
+
+        display: flex; 
+        align-items: center;
+
+        /* transition: scroll 1s; */
+
+
+
+        background-size: 40vw auto;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-position-x: 50vw;
+        
+    }
+
+    .section_contents p{
+        position: relative;
+        left: 10vw;
+        font-size: 1.1vw;
+        width:50vw;
+    }
+
+    .heading{
+        font-size: 1.6vw;
+    }
+
+    #icon_format{
+        color: red;
+        font-size: 1vw;
+    }
+
+    .download_button{
+        background-color: rgb(49, 49, 49);
+        border: none;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        width: 45vw;
+        height: 5vh;
+        /* opacity: 0.5; */
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a:link, a:visited{
+        color: white;
+        text-decoration: none;
+        z-index: 999;
+    }
+
+    a:hover {
+        font-size: 1.55vw;
+        font-weight: 500;
+    }
+
+    #link_icon_format{
+        color: red;
+    }
+
+    #phone_menu_button{
+        display: none;
+    }
+
+    /* Qualification backgrounds */
+    #tab_qualifications .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/master_quadraped_1.png");
+    }
+
+    #tab_qualifications .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/bachelor_manipulator_3.png");
+    }
+
+    #tab_qualifications .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/drone.png");
+    }
+
+
+
+    /* Experience background */
+    #tab_experience .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures");
+    }
+
+    #tab_experience .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/csir.jpg");
+    }
+
+    #tab_experience .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/");
+    }
+
+
+    /* Skills background */
+    #tab_skills .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/core_knowledge-Devi-saraswati_laptop.jpg");
+    }
+    
+    #tab_skills .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/Skills_Laptop.png");
+    }
+    
+    #tab_skills .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/cocurriculars_humanoid_hand.png");
+    }
+
+    /* projects background */
+    #tab_projects .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures");
+    }
+
+    #tab_projects .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/d_star_map.png");
+    }
+    
+    #tab_projects .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/dof6_manipulator_3.png");
+    }
+    
+    #tab_projects .section_contents:nth-child(4){
+        background-image: url("../resources/media/index/pictures/printer_print_head.png");
+    }
+    
+    #tab_projects .section_contents:nth-child(5){
+        background-image: url("../resources/media/index/pictures/dof4_manipulator_3.png");
+    }
+    
+    #tab_projects .section_contents:nth-child(6){
+        background-image: url("../resources/media/index/pictures/");
+    }
+
+    #tab_projects .section_contents:nth-child(7){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(8){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(9){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(10){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    /* welcome background */
+    #tab_welcome .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/about_AI_robot.jpg");
+        background-position-x: 55vw;
+       
+    }
+
+    /* Publication background */
+    #tab_publications .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/Publication_pen.png");
+    }
+    
+    /* Blog background */
+    #tab_blogs .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/blog_typwriter.png");
+    }
+
+    #tab_publications .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    /* photography background */
+    #tab_photography .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/photography_camera.png");
+    }
+    
+    /* Contacts background */
+    #tab_contacts .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/contact_mail.png");
+    }
+    
+}
+
+
+/* For mobile dispaly */
+@media screen and (orientation: portrait){
+
+    body{
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .workspace{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    .section_front{
+        /* position: relative; */
+        width: 100vw;
+        height: 100vh;
+        background-size: 100vw;
+        scroll-snap-align: start;
+
+        background-image: url("../resources/media/index/pictures/phone_top.jpg");
+        /* background-position-x: vw ; */
+        background-repeat: no-repeat;
+    }
+    
+    .qutation{
+        position: absolute;
+        color: rgb(255,174,0);
+        left: 50vw;
+        top: 6.5vh;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+    }
+
+    #om_space{
+        border-style: solid;
+        border-color: black;   
+        color: red;
+        border-bottom-width: 1.5vh;
+    }
+
+    .about{
+        position: absolute;
+        top: 50vh;
+        left:3vw;
+        font-size: 2vw;
+        width: 65vw;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .about_greet{
+        font-size: 3vw;
+    }
+
+    .first_name{
+        font-size: 5vw;
+
+    }
+
+    .last_name{
+        font-size: 11vw;
+        color: skyblue;
+    }
+
+    #tab{
+        top: 0vh;
+        padding-top: 3vh;
+        position: fixed;
+        width: 100vw;
+        height: 85vh;
+        overflow-y:scroll;
+        z-index: 9;
+        background-color: rgb(0, 0, 0, 0.5);
+
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+
+        display: none;
+
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    
+
+    #tab button{
+        top: 5vh;
+        /* margin-left: 0px; */
+        /* margin-right: 0px;
+        margin-top: .5vh;
+        margin-bottom: .5vh; */
+        font-family: 'Times New Roman', Times, serif;
+
+        left: 50vw;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /* border-radius: 10vw; */
+
+    }
+
+    #tab button:hover{
+        cursor: pointer;
+        color: rgb(202, 202, 202);
+    }
+
+    #tab button.active{
+        font-size: 8vw;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .tablinks{
+        height: 10vh;
+        width: 100vw;
+        position: relative;
+        width: auto;
+        /* display: block; */
+        border: none;
+        font-size: 4vw;
+        background-color: transparent;
+        color: rgb(143, 143, 143);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabcontent{
+        display: none;
+
+    }
+
+    .section_contents{
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: end;
+
+        text-align: justify;
+        display: flex;
+        align-items: center;
+
+        background-repeat: no-repeat;
+        background-position-y: center;
+
+
+    }
+
+    .section_contents p{
+        position: relative;
+        left: 10vw;
+        font-size: 2.7vw;
+        width:61vw;
+    }
+
+    .heading{
+        font-size: 3vw;
+    }
+
+    #icon_format{
+        color: red;
+        font-size: 2.7vw;
+    }
+
+    .download_button{
+        background-color: rgb(49, 49, 49);
+        border: none;
+        border-radius: 2vw;
+        font-size: 3vw;
+        width: 60vw;
+        height: 3.5vh;
+        /* opacity: 0.5; */
+        font-style: italic;
+
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a:link, a:visited{
+        color: white;
+        text-decoration: none;
+        z-index: 999;
+    }
+
+    #link_icon_format{
+        color: red;
+    }
+
+    #phone_menu_button{
+        display: block;
+        float: left;
+        top: 0vh;
+        left: 0vw;
+        position: fixed;
+        z-index: 9;
+    }
+
+    #phone_menu_button button{
+        background-color: rgb(59, 57, 57);
+        color: rgb(252, 232, 195);
+        border: none;
+        border-radius: 1vh;
+        font-size: 2vh;
+    }
+
+
+
+    /* Qualification backgrounds */
+    #tab_qualifications .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/master_quadraped_1.png");
+        background-size: 70vw;
+        background-position-x: 50vw;
+    }
+
+    #tab_qualifications .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/bachelor_manipulator_3.png");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+
+    #tab_qualifications .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/drone.png");
+        background-size: 80vw;
+        background-position-x: 30vw;
+
+    }
+
+
+    /* Experience background */
+    #tab_experience .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures");
+    }
+
+    #tab_experience .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/csir.jpg");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+
+    #tab_experience .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/");
+
+    }
+
+
+    /* Skills background */
+    #tab_skills .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/core_knowledge-Devi-saraswati_phone.jpg");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+    
+    #tab_skills .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/Skills_Laptop.png");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+    
+    #tab_skills .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/cocurriculars_humanoid_hand.png");
+        background-size: 70vw;
+        background-position-x: 20vw;
+    }
+
+    /* projects background */
+    #tab_projects .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures");
+    }
+
+    #tab_projects .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/d_star_map.png");
+        background-size: 100vh;
+    }
+    
+    #tab_projects .section_contents:nth-child(3){
+        background-image: url("../resources/media/index/pictures/dof6_manipulator_3.png");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+    
+    #tab_projects .section_contents:nth-child(4){
+        background-image: url("../resources/media/index/pictures/printer_print_head.png");
+        background-size: 80vw;
+        background-position-x: 17vw;
+    }
+    
+    #tab_projects .section_contents:nth-child(5){
+        background-image: url("../resources/media/index/pictures/dof4_manipulator_3.png");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+    
+    #tab_projects .section_contents:nth-child(6){
+        background-image: url("../resources/media/index/pictures/");
+    }
+
+    #tab_projects .section_contents:nth-child(7){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(8){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(9){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    #tab_projects .section_contents:nth-child(10){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    /* welcome background */
+    #tab_welcome .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/about_AI_robot.jpg");
+        background-size: 90vw auto;
+        background-position-x: 60vw;
+
+    }
+
+    /* Publication background */
+    #tab_publications .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/Publication_pen.png");
+        background-size: 70vw;
+        background-position-x: 30vw;
+    }
+    
+    /* Blog background */
+    #tab_blogs .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/blog_typwriter.png");
+        background-size: 90vw;
+        background-position-x: 10vw;
+    }
+
+    #tab_publications .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures/");
+    }
+    
+    /* photography background */
+    #tab_photography .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/photography_camera.png");
+        background-size: 150vw;
+        background-position-x: 25vw;
+    }
+    
+    /* Contacts background */
+    #tab_contacts .section_contents:nth-child(1){
+        background-image: url("../resources/media/index/pictures/contact_mail.png");
+        background-size: 65vw;
+        background-position-x: 32vw;
+    }
+    
+}

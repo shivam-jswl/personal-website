@@ -1,0 +1,478 @@
+<!-- main page of the websites, index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta data -->
+        <meta name="viewport" content="width=device-width, intial-scale=1" charset="UTF-8"/>
+
+        <!-- clear cache -->
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+
+        <!-- head title -->
+        <title>Shivam Jaiswal</title>
+
+        <!-- head icon -->
+        <link rel="icon" href="resources/media/index/icons/om-solid.png" type="image/x-icon">
+
+        <!-- internal css style files -->
+        <link rel="stylesheet" type="text/css" href="style_sheets/index.css">
+
+        <!-- extranal css style files -->
+        <!-- icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+    </head>
+
+    <body  id="body_id">
+        <div class="workspace" id="workspace_id">
+            <div class="section_front" id="section_front_id"> <!-- front page -->
+                <div class="qutation">
+                    <center style="display:inline-block; font-weight: 900; font-style: italic;">
+                        <id><i class='fa-solid fa-om fa-lg' id="om_space">&ensp;</i> <id></id> <br>
+                        नमस्ते शारदे देवी काश्मीरपुरवासिनि <br>
+                        त्वामहं प्रार्थये नित्यं विद्यादानं च देहि मे
+                    </center>&nbsp;||
+                </div>
+                <p class ="about"><b class="about_greet"><b class="hari_om">हरि ॐ</b>, Hello, Bonjour, こんにちは, its me</b><br>
+                    <b class="first_name">Shivam</b> <b class="last_name"> Jaiswal</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla molestie ex a rutrum. Vestibulum ante 
+                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean porta vitae arcu quis porta. 
+                    Ut ornare, justo eu egestas fermentum, diam ex elementum dolor, eu porttitor ex est eu turpis.
+                </p>
+            </div>
+
+            <div id="tab"> <!-- tabs bar -->
+                <button class="tablinks" id="top_tab" onclick="tabSelection(event, 'tab_qualifications')">
+                    Qualifications    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_experience')">
+                    Experience    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_skills')">
+                    Skills    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_projects')">
+                    Projects    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_welcome')" id="default">
+                    Welcome    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_publications')">
+                    Publications    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_blogs')">
+                    Blogs    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_photography')">
+                    Photography    <!-- name on the button -->
+                </button>
+                <button class="tablinks" onclick="tabSelection(event, 'tab_contacts')">
+                    Connect    <!-- name on the button -->
+                </button>
+            </div>  
+
+            <div id="tab_qualifications" class="tabcontent"> <!-- tab contents for Qualications section-->
+                <div class="section_contents" >
+                    <p>
+                        <b class="heading">Higher Education </b><br><br>
+                        Master of Technology (M.Tech) in ECE with specialization in 
+                        Robotics from Defence Institute of Advanced Technology-DU, 
+                        Bharat (2022).<br><br>
+                        Bachelor of Technology (B. Tech) with major in Mechatronic 
+                        Engineering from Manipal University, Bharat (2019).
+                    </p>
+                </div>
+                <div  class = "section_contents">
+                    <p>
+                        <b class="heading">Schoolling </b><br><br>
+                        Higher Secondary School Certificate, CBSE, Bharat (2014).<br><br>
+                        Secondary School Certificate, CBSE, Bharat (2012).
+                    </p>
+                </div>
+                <div  class = "section_contents">
+                    <p>
+                        <b class="heading">Certifications</b><br><br>
+                        Hardware modelling using Verilog<br><br>
+                        Parallel programming using OpenMP.
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_experience" class="tabcontent"> <!-- tab contents for experience section-->
+                <div  class = "section_contents">
+                    <p>
+                        <b class="heading">DRDO - Centre for Artificial Intelligence and Robotics -Intern </b>(2021-22)<br><br>
+                        As an Project tarinee I got the opportunity to work on Upper body Exoskeleton in 
+                        CAIR-DRDO, as my thesis work for Master's Degree. My project was to <b><em>
+                        design and simulation of upper body exoskeleton using cable driven mechanism
+                        </em></b> for elbow support during lifting action. With this opportunity I learned and honed
+                        various tools such as MATLAB, Simulink, MSC-Adams, OpenSim and concept in 
+                        Robotics and control.
+                    </p>
+                </div>
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">CSIR - Central Scientific Instruments Organisation -Intern </b>(2019)<br><br>
+                        During my stay at CSIR-CSIO for six months as an Project Trainee/Intern I got 
+                        to work on various hardware such as Stepper motor, Microstepping Drives, 
+                        motor drives, Arduino, etc and tools such as Arduino IDE, Embedded C, 
+                        Siemens NX.
+                    </p>
+                </div>
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Agnikul Cosmos Private Limited - Space Silicon Engineer - Intern </b>(2022)<br><br>
+                        In this two months internship, I worked on simulation of 3 phase AC motor on 
+                        HIL systems as well as worked with embedded system team to write C program 
+                        for Inter-process communication using Message Queue and shared memory access.
+    
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_skills" class="tabcontent"> <!-- tab contents for skill section-->
+                <!-- Skills -->
+            
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Core Knowledge</b><br><br>
+                        <span class="skill_name">
+
+                            <i class='fas fa-robot' id="icon_format"></i>&ensp; Robotics kinematics and dynamic
+                                <br><br>
+    
+                            <i class='fa-solid fa-route' id="icon_format"></i>&ensp; Robot path planning and trajectory
+                                <br><br>
+
+                            <i class='fa-solid fa-gears' id="icon_format"></i>&ensp; Robot sensor and actuators
+                                <br><br>
+
+                            <i class='fas fa-rocket' id="icon_format"></i>&ensp; Mechatronics (Mechanical and Electronics)
+                                <br><br>
+    
+                            <i class='fas fa-microchip' id="icon_format"></i>&ensp; Electronics devices and embedded system
+                                <br><br>
+
+                            <i class='fas fa-wave-square' id="icon_format"></i>&ensp; Control System
+                                <br><br>
+
+                            <i class='fas fa-infinity' id="icon_format"></i>&ensp; Engineering mathematics
+                                <br><br>
+
+                            <i class='fas fa-wave-square' id="icon_format"></i>&ensp; Digital logics and circuits
+                                <br><br>
+
+                            <i class='fas fa-satellite-dish' id="icon_format"></i>&ensp; Siganl and systems
+                                <br><br>
+
+                            <i class='fas fa-laptop-code' id="icon_format"></i>&ensp; OOPS concept and data structure
+                                <br><br>
+
+                         </span>
+                    </p>
+                </div>
+
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Tools</b><br><br>
+                        <span class="skill_name">
+                            <label><i class="fa-solid fa-robot" aria-hidden="true" id="icon_format"></i>&ensp; Robot Operating System
+                                <br><br>
+                            
+                            <label><i class="fa-solidd fa-m" aria-hidden="true" id="icon_format"></i>&ensp; MATLAB/Simulink
+                                <br><br>
+
+                            <label><i class="fa-solid fa-terminal" aria-hidden="true" id="icon_format"></i>&ensp; C/C++
+                                <br><br>
+
+                            <label><i class="fa-brands fa-linux" aria-hidden="true" id="icon_format"></i>&ensp; Linux
+                                <br><br>
+
+                            <label><i class="fa-brands fa-python" aria-hidden="true" id="icon_format"></i>&ensp; Python
+                                <br><br>
+
+                            <label><i class='fa-brands fa-docker' id="icon_format"></i>&ensp; Docker
+                                <br><br>
+
+                            <label><i class="fa-solid fa-cubes" id="icon_format"></i>&ensp; Solidowrks
+                                <br><br>
+
+                            <label><i class='fa-solid fa-cubes' id="icon_format"></i>&ensp; Siemens-NX
+                                <br><br>
+
+                            <label><i class="fa-solid fa-cubes" aria-hidden="true" id="icon_format"></i>&ensp; MSC-Adams
+                                <br><br>
+
+                            <label><i class="fab fa-github" aria-hidden="true" id="icon_format"></i>&ensp; GitHub
+                                <br><br>
+
+                            <label><i class='fa-brands fa-raspberry-pi' id="icon_format"></i>&ensp; Raspberry Pi &emsp;
+                                <br><br>
+
+                            <label><i class='fa fa-code' id="icon_format"></i>&ensp; Sensor Fusion &emsp;
+                                <br><br>
+
+                            <label><i class='fa-brands fa-buysellads' id="icon_format"></i>&ensp; AutoCAD &emsp;
+                                <br><br>
+
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Cocurriculars -->
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Cocurriculars</b><br><br>
+
+                        <span class="skill_name" style="width: 100%;">
+                            <i class='fa fa-code' id="icon_format"></i>&ensp; Web development<br><br>
+                            <i class='fas fa-globe-asia' id="icon_format"></i>&ensp; Geopolitics<br><br>
+                            <i class='fas fa-camera-retro' id="icon_format"></i>&ensp; Photography<br><br>
+                            <i class="fab fa-phoenix-framework" id="icon_format"></i>&ensp; Photoshop<br><br>
+                            <i class="fas fa-book-open-reader" id="icon_format"></i>&ensp; Reading<br><br>
+                            <i class="fas fa-utensils" id="icon_format"></i>&ensp; Cooking<br><br>
+                            <i class='fa fa-paper-plane' id="icon_format"></i>&ensp; Travel<br><br>
+                            <i class='fas fa-spoon' id="icon_format"></i>&ensp; Badminton<br><br>
+                            <i class='fa fa-table-tennis' id="icon_format"></i>&ensp; Table Tennis<br><br>
+                            <i class='fas fa-swimmer' id="icon_format"></i>&ensp; Swimming<br><br>
+                            <i class='fas fa-chess-knight' id="icon_format"></i>&ensp; Chess<br><br>
+                            <i class='fas fa-guitar' id="icon_format"></i>&ensp; Guitar<br><br>
+                            <i class='fa fa-music' id="icon_format"></i>&ensp; Flute<br><br>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_projects" class="tabcontent"> <!-- tab contents for projects section-->
+                <div class = "section_contents">
+                    <p>
+                        <a href="./projects/project_templet.html" target="_blank"><b class="heading">Project: Cable-driven upper body exoskeleton </b></a>(2021-22)<br><br>
+                        This was a project for my thesis of Master's degree (M. Tech). Aim was to desgin 
+                        and simulate an upper body Exoskeleton to provide assisstance at elbow joint 
+                        during lift and hold action by a human. A kinmeatic model of the human body was 
+                        derived and simulated in Simulink and Adams with the experimental data, which 
+                        was a lift, walk and drop expreiment of 100 men. Data contains, position, 
+                        velocity, acceleration and torque. Develpoed human model was based on the 
+                        proprtion of human body based on various itrature survey. A cable driven 
+                        mechanishm was develped in Solidworks and its mathematical model was formed. It 
+                        was imported in MATLAB-Simulink along with upper body of the develped human model. 
+                        Maximum and minimum posotion/velocity contraints on each joint of Exoskelton was 
+                        applied. Later stage it was simulated for position control of elbow joint using 
+                        PID and PI.
+                    </p>
+                </div>
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Project: Path planning using D* Algorithm </b>(2021)<br><br>
+                        Implementation of D* algorithm in MATLAB code. It generates a new local path in 
+                        the workspace wherever changes occur. Changes include removal or addition of obstacle. 
+                        Velocity of the obstacle was not considered, only generation of path from 8 grid method.
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Project: Six Degree of Freedom arm Manipulator </b>(2017)<br><br>
+                        Built a 6 DOF Robot manipulator for minor project in Bachelor’s degree to demonstrate 
+                        forward kinematics of a manipulator. At joints DC motors were used and controlled using 
+                        potentiometer and Arduino Uno. Potentiometer was used to provide joint angle, externally. 
+                        2-Finger End Effector was designed in AutoCAD and built using steel plates and rubber 
+                        for the grip. End effector was actuated using Servo motors.
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Project: 3D Printer </b>(2020)<br><br>
+                        Developed for personal use. Based on RepRap Marlin firmware.
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Project: Four Degree of Freedom arm Manipulator </b>(2021)<br><br>
+                        Designed and simulated a 4 DOF Robot manipulator in MSC-Adams software, to study 
+                        kinematic and dynamic behaviour of the robot in a pick and drop application.
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Competition: Swadeshi Microprocessor Challenge </b>(2020-21)<br><br>
+                        In space movement of human is extreme difficult and limited due to the complex deign 
+                        of Extravehicular Mobility Unit (space suit) and constrained movement inside it. 
+                        To overcome this, astronauts require either a better form of EMU (Extravehicular 
+                        Mobility Unit) or an automated robot, which can perform some simple task or maybe 
+                        complex task required outside the space station. This project deals with the later 
+                        part of the solution. This will be the first step in this area. At first, it will have 
+                        a very basic task to do, like monitoring our Space Station form outside, documenting the 
+                        work of astronauts in the space, keeping track of all activities, holding tools for 
+                        astronauts (wight will be a negligible factor in Space due to microgravity). 
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Competition: ARTPARK Robotics Challenge by IISc </b>(2021)<br><br>
+                        A competition by IISc, Bangalore to make a manipulator placed on a mobile robot to 
+                        clean washroom. Task includes, garbage pick and drop cleaning wash basin and mirror 
+                        and cleaning floor. It starts from outside, enter washroom, clean, and move back to 
+                        initial position. We built a CAD model of the robot and simulated in ROS. We made to 
+                        top 30 teams.
+                    </p>
+                </div>
+                
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Competition: Periyar U. Business Incubation Confederation </b>(2021)<br><br>
+                        This competition was conducted to provide funding for selected idea. We presented an idea to 
+                        utilize Piezoelectric effect to store electricity in a battery and use it to power street light. 
+                        Array of piezoelectric materials to on road. When pressed it energy will be stored and used to 
+                        power nearby street lights at night. We made to final presentation round. 
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Competition: Toy hackathon by Government of Bharat </b>(2021)<br><br>
+                        Task was to provide an idea for a toy or game, which represents culture of Bharat. We presented 
+                        an idea of a meditating Sadhu with a push button, which when pressed, will tell a random fact of 
+                        Bharat, mostly which represent cultural history Bharat.
+                    </p>
+                </div>
+    
+                <div class = "section_contents">
+                    <p>
+                        <b class="heading">Competition: AIM by NITI Aayog, Government of Bharat </b>(2021)<br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_welcome" class="tabcontent"> <!-- tab contents for welcome section -->
+                <div class="section_contents" id="section_contents">
+                    <p>
+                        
+                        <b class="heading">Do visit following pages</b><br><br>
+                        <!-- <b class="heading">Click below to visit photography page.</b><br><br> -->
+                        <button class="download_button">
+                            <a href="./photography.html" class="a_1" target="_blank">
+                                &ensp;<i class="fas fa-download" id="link_icon_format"></i>
+                                    &ensp;Photography page
+                            </a>
+                        </button>
+                        <br><br><br><br>
+
+                        <!-- <b class="heading">Click below to visit project page.</b><br><br> -->
+                        <button class="download_button">
+                            <a href="./project_home.html" class="a_1" target="_blank">
+                                &ensp;<i class="fas fa-project-diagram" id="link_icon_format"></i>
+                                    &ensp;Project page
+                            </a>
+                        </button>
+                        <br><br><br><br>
+
+                        <!-- <b class="heading">Click below to visit blogging site.</b><br><br> -->
+                        <button class="download_button">
+                            <a href="./blog.html" class="a_1" target="_blank">
+                                &ensp;<i class="fas fa-blog" id="link_icon_format"></i>
+                                    &ensp;Blog Page
+                            </a>
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_publications" class="tabcontent"> <!-- tab contents for publications section -->
+                <div class="section_contents">
+                    <p>
+                        <b class="heading">IFAC - ScienceDirect</b><br><br>
+                        <i>Low-Cost Path Planning in 2D Environment using A* Algorithm by Considering Slope of the Obstacle - 2022.</i><br><br>
+                        <!-- Put a text here here --><br><br><br><br>
+                        Click below link to visit ScienceDirect to access the research paper<br><br>
+                        <button class="download_button">
+                            <a href="https://doi.org/10.1016/j.ifacol.2022.04.128" target="_blank" class="a_1">
+                                &ensp;<i class="fas fa-pen-fancy"  id="link_icon_format"></i>
+                                &ensp;Shivam et al. 2022
+                            </a>
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_blogs" class="tabcontent"> <!-- tab contents for blogs section blog section-->
+                <div class="section_contents">
+                    <p>
+                        <b class="heading">Click following link to visit blog page or scroll down</b><br><br>
+                        <button class="download_button" >
+                            <a href="./blog.html" target="_blank" class="a_1">
+                                &ensp;<i class="fas fa-pen-nib" id="link_icon_format"></i>
+                                &ensp;Blog Page
+                            </a>
+                        </button>
+                    </p>
+                </div>
+
+                <div class="section_contents">
+                    <p>
+                        <a href="./blogs/blog_read.html" target="_blank"><b class="heading">Blog/Article 1</b></a><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_photography" class="tabcontent"> <!-- tab contents for photography section-->
+                <div class="section_contents">
+                    <p>
+                        <b class="heading">Click following link to visit photography page</b><br><br>
+                        <button class="download_button" >
+                            <a href="./photography.html" target="_blank" class="a_1">
+                                &ensp;<i class="fa fa-camera-retro" id="link_icon_format"></i>
+                                &ensp;Photography Page
+                            </a>
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div id="tab_contacts" class="tabcontent"> <!-- tab contents for contacts sections-->
+                <div class="section_contents">
+                    <p>
+                        <b class="heading">Contact using following</E-Mail></b><br><br>
+                        <button class="download_button">
+                            <a href="mailto: shivamjaiswal095.work@gmail.com" class="a_1">
+                                &ensp;<i class="fas fa-envelope" id="link_icon_format"></i>
+                                &ensp;shivamjaiswal095.work@gmail.com
+                            </a>
+                        </button><br><br>
+                        <button class="download_button">
+                            <a href="https://www.linkedin.com/in/shivam-bharat/" target="_blank" class="a_1">
+                                &ensp;<i class="fab fa-linkedin" id="link_icon_format"></i>
+                                &ensp;shivam-bharat
+                            </a>
+                        </button>
+
+                        <br><br><br><br><br>
+                        <b class="heading">Click below to download a brief resume.</b><br><br>
+                        <button class="download_button">
+                            <a href="resources/media/index/documents/shivam_resume.pdf" download="shivam_jaiswal_resume" class="a_1">
+                                &ensp;<i class="fas fa-download" id="link_icon_format"></i>
+                                    &ensp;Download resume
+                            </a>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="phone_menu_button">
+            <button onclick="phone_menu_button()">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+        </div>
+
+        <!-- internal javascript files -->
+        <script src="javascript/index.js"></script>
+
+    </body>
+</html>
