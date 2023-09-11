@@ -3,7 +3,7 @@
     Connect: https://shivamjaiswal.free.nf
 </h3>
 
-source code and resources of personal webpage, https://shivamjaiswal.free.nf.
+source code and resources of personal webpage, https://shivamjaiswal.free.nf.<br>
 Contains:
 	Home page
 	Project page
