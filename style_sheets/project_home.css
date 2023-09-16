@@ -27,6 +27,13 @@
         font-family: 'Times New Roman', Times, serif;
         color: black;
     }
+
+    .profile_link{
+        margin-right: 10px;
+        float: right;
+        /* font-weight: 900; */
+    }
+    
     
     a:link, a:active, a:visited, a:hover{
         text-decoration: none;
@@ -61,9 +68,9 @@
 
         border: none;
 
-        background-color: rgb(0,0,0,0.5 );
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
+            background-color: rgb(0,0,0,0.5 );
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
 
         font-family: 'Times New Roman', Times, serif;
     }
@@ -101,7 +108,7 @@
     h2{
         position: relative;
         text-decoration: none;
-        font-size: 3.5vh;
+        font-size: 3vh;
         left: 1vw;
         font-weight: normal;
 
@@ -121,11 +128,10 @@
         /* left: 1vw; */
         font-weight: normal;
         margin-bottom: 3vh;
-        color: black;
+        color: rgb(94, 94, 94);
+        margin-bottom: 50px;
 
     }
-
-
 
     .footer{
         position: relative;
@@ -149,15 +155,35 @@
         padding-top: 3vh;
     }
 
-    .footer div{
+    .footer .below_footer{
         position: relative;
         width: 60vw;
         
         left: 50vw;
         transform: translate(-50%, 0);
-
     }
 
+    .footer .footer_project{
+        position: relative;
+        float: right;
+            /* border: solid; */
+        width: 50%;
+        text-align: center  ;
+    }
+
+    .footer .footer_profile{
+        position: relative;
+        float: right;
+            /* border: solid; */
+        width: 50%;
+        text-align: center;
+    }
+
+    .out_of_bound{
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
 }
 
 
@@ -179,7 +205,7 @@
 
     .home{
         position: relative;
-        width: 100vw;
+        width: 95vw;
         /* background-color: skyblue; */
         z-index: 9;
         margin: 0;
@@ -188,6 +214,12 @@
 
         font-family: 'Times New Roman', Times, serif;
         color: black;
+    }
+    
+    .profile_link{
+        float: right;
+        margin-right: 10px;
+        /* font-weight: 900; */
     }
     
     a:link, a:active, a:visited, a:hover{
@@ -252,7 +284,6 @@
         
     }
 
-
     h2{
         position: relative;
         margin-top: 3vh;
@@ -283,6 +314,8 @@
         width: 100vw;
         border: none;
 
+        color: black;
+
         background-color: rgb(240, 240, 240);
     }
 
@@ -292,4 +325,26 @@
         padding-top: 3vh;
     }
 
+    .footer .footer_project{
+
+        float: right;
+            /* border: solid; */
+        width: 50%;
+        text-align: center  ;
+    }
+
+    .footer .footer_profile{
+        
+        float: right;
+            /* border: solid; */
+        width: 50%;
+        text-align: center;
+    }
+
+    
+    .out_of_bound{
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
 }
