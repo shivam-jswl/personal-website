@@ -27,6 +27,8 @@
 
     <body  id="body_id">
         <div class="workspace" id="workspace_id">
+
+            <!-- Front section -->
             <div class="section_front" id="section_front_id"> <!-- front page -->
                 <div class="qutation">
                     <center style="display:inline-block; font-weight: 900; font-style: italic;">
@@ -35,14 +37,15 @@
                         त्वामहं प्रार्थये नित्यं विद्यादानं च देहि मे
                     </center>&nbsp;||
                 </div>
-                <p class ="about"><b class="about_greet"><b class="hari_om">हरि ॐ</b>, Hello, Bonjour, こんにちは, its me</b><br>
+                <p class ="about"><b class="about_greet" translate="no"><b class="hari_om">हरि ॐ</b>, Hello, Bonjour, こんにちは, its me</b><br>
                     <b class="first_name">Shivam</b> <b class="last_name"> Jaiswal</b><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla molestie ex a rutrum. Vestibulum ante 
-                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean porta vitae arcu quis porta. 
-                    Ut ornare, justo eu egestas fermentum, diam ex elementum dolor, eu porttitor ex est eu turpis.
+                    Robotics enthusiast based in Bharat with a strong academic background and 
+                    experience with national laboratories (DRDO and CSIR), eager to contribute 
+                    to cutting-edge research and development in the field.
                 </p>
             </div>
 
+            <!-- Tab group -->
             <div id="tab"> <!-- tabs bar -->
                 <button class="tablinks" id="top_tab" onclick="tabSelection(event, 'tab_qualifications')">
                     Qualifications    <!-- name on the button -->
@@ -73,8 +76,11 @@
                 </button>
             </div>  
 
-            <div id="tab_qualifications" class="tabcontent"> <!-- tab contents for Qualications section-->
-                <div class="section_contents" >
+
+
+            <!-- Qualications section-->
+            <div id="tab_qualifications" class="tabcontent"> 
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/master_quadraped_1.png');">
                     <p>
                         <b class="heading">Higher Education </b><br><br>
                         Master of Technology (M.Tech) in ECE with specialization in 
@@ -84,14 +90,16 @@
                         Engineering from Manipal University, Bharat (2019).
                     </p>
                 </div>
-                <div  class = "section_contents">
+
+                <div  class = "section_contents" style="background-image: url('../resources/media/index/pictures/bachelor_manipulator_3.png');">
                     <p>
                         <b class="heading">Schoolling </b><br><br>
                         Higher Secondary School Certificate, CBSE, Bharat (2014).<br><br>
                         Secondary School Certificate, CBSE, Bharat (2012).
                     </p>
                 </div>
-                <div  class = "section_contents">
+
+                <div  class = "section_contents" style="background-image: url('../resources/media/index/pictures/drone.png');">
                     <p>
                         <b class="heading">Certifications</b><br><br>
                         Hardware modelling using Verilog<br><br>
@@ -100,8 +108,9 @@
                 </div>
             </div>
 
-            <div id="tab_experience" class="tabcontent"> <!-- tab contents for experience section-->
-                <div  class = "section_contents">
+            <!-- Experience section-->
+            <div id="tab_experience" class="tabcontent"> 
+                <div  class = "section_contents" style="background-image: url('../resources/media/index/pictures');">
                     <p>
                         <b class="heading">DRDO - Centre for Artificial Intelligence and Robotics -Intern </b>(2021-22)<br><br>
                         As an Project tarinee I got the opportunity to work on Upper body Exoskeleton in 
@@ -112,7 +121,8 @@
                         Robotics and control.
                     </p>
                 </div>
-                <div class = "section_contents">
+
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/csir.jpg');">
                     <p>
                         <b class="heading">CSIR - Central Scientific Instruments Organisation -Intern </b>(2019)<br><br>
                         During my stay at CSIR-CSIO for six months as an Project Trainee/Intern I got 
@@ -121,7 +131,8 @@
                         Siemens NX.
                     </p>
                 </div>
-                <div class = "section_contents">
+
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Agnikul Cosmos Private Limited - Space Silicon Engineer - Intern </b>(2022)<br><br>
                         In this two months internship, I worked on simulation of 3 phase AC motor on 
@@ -132,10 +143,11 @@
                 </div>
             </div>
 
-            <div id="tab_skills" class="tabcontent"> <!-- tab contents for skill section-->
+            <!-- Skill section-->
+            <div id="tab_skills" class="tabcontent"> 
                 <!-- Skills -->
             
-                <div class = "section_contents">
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/core_knowledge-Devi-saraswati_laptop.jpg');">
                     <p>
                         <b class="heading">Core Knowledge</b><br><br>
                         <span class="skill_name">
@@ -174,7 +186,7 @@
                     </p>
                 </div>
 
-                <div class = "section_contents">
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/Skills_Laptop.png');">
                     <p>
                         <b class="heading">Tools</b><br><br>
                         <span class="skill_name">
@@ -222,7 +234,7 @@
                 </div>
 
                 <!-- Cocurriculars -->
-                <div class = "section_contents">
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/cocurriculars_humanoid_hand.png');">
                     <p>
                         <b class="heading">Cocurriculars</b><br><br>
 
@@ -245,60 +257,80 @@
                 </div>
             </div>
 
-            <div id="tab_projects" class="tabcontent"> <!-- tab contents for projects section-->
-                <div class = "section_contents">
+            <!-- Projects section-->
+            <div id="tab_projects" class="tabcontent"> 
+
+                <!-- Teleoperation of mobile robot (ROS_1-Gazebo) -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
-                        <a href="./projects/project_templet.html" target="_blank"><b class="heading">Project: Cable-driven upper body exoskeleton </b></a>(2021-22)<br><br>
-                        This was a project for my thesis of Master's degree (M. Tech). Aim was to desgin 
-                        and simulate an upper body Exoskeleton to provide assisstance at elbow joint 
-                        during lift and hold action by a human. A kinmeatic model of the human body was 
-                        derived and simulated in Simulink and Adams with the experimental data, which 
-                        was a lift, walk and drop expreiment of 100 men. Data contains, position, 
-                        velocity, acceleration and torque. Develpoed human model was based on the 
-                        proprtion of human body based on various itrature survey. A cable driven 
-                        mechanishm was develped in Solidworks and its mathematical model was formed. It 
-                        was imported in MATLAB-Simulink along with upper body of the develped human model. 
-                        Maximum and minimum posotion/velocity contraints on each joint of Exoskelton was 
-                        applied. Later stage it was simulated for position control of elbow joint using 
-                        PID and PI.
+                        <a href="./projects/teleop_UGV/teleop_UGV.html" target="_blank"><b class="heading">Project: Teleoperation of mobile robot (ROS-Gazebo)</b></a>(2023)<br><br>
+                        Desgin and simulation of an upper body Exoskeleton to provide assisstance at 
+                        elbow joint during lift and hold action by a humans.<br>
+                        For details click... <a href="./projects/teleop_UGV/teleop_UGV.html" target="_blank">
+                        <u>here.</u></a>
                     </p>
                 </div>
-                <div class = "section_contents">
+
+                <!-- Cable-driven upper body exoskeleton -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
+                    <p>
+                        <a href="./projects/exoskeleton/exoskeleton.html" target="_blank"><b class="heading">Project: Cable-driven upper body exoskeleton </b></a>(2021-22)<br><br>
+                        Desgin and simulation of an upper body Exoskeleton to provide assisstance at 
+                        elbow joint during lift and hold action by a humans.<br>
+                        For details click... <a href="./projects/exoskeleton/exoskeleton.html" target="_blank">
+                        <u>here.</u></a>
+                    </p>
+                </div>
+
+                <!-- Path planning using D* Algorithm -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/d_star_map.png');">
                     <p>
                         <b class="heading">Project: Path planning using D* Algorithm </b>(2021)<br><br>
                         Implementation of D* algorithm in MATLAB code. It generates a new local path in 
                         the workspace wherever changes occur. Changes include removal or addition of obstacle. 
-                        Velocity of the obstacle was not considered, only generation of path from 8 grid method.
+                        Velocity of the obstacle was not considered, only generation of path from 8 grid method.<br>
+                        For details click... <a href="./projects/" target="_blank">
+                        <u>here.</u></a>
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!-- Six Degree of Freedom arm Manipulator -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/dof6_manipulator_3.png');">
                     <p>
                         <b class="heading">Project: Six Degree of Freedom arm Manipulator </b>(2017)<br><br>
                         Built a 6 DOF Robot manipulator for minor project in Bachelor’s degree to demonstrate 
                         forward kinematics of a manipulator. At joints DC motors were used and controlled using 
                         potentiometer and Arduino Uno. Potentiometer was used to provide joint angle, externally. 
                         2-Finger End Effector was designed in AutoCAD and built using steel plates and rubber 
-                        for the grip. End effector was actuated using Servo motors.
+                        for the grip. End effector was actuated using Servo motors.<br>
+                        For details click... <a href="./projects/" target="_blank">
+                        <u>here.</u></a>
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!-- 3D Printer -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/printer_print_head.png');">
                     <p>
                         <b class="heading">Project: 3D Printer </b>(2020)<br><br>
-                        Developed for personal use. Based on RepRap Marlin firmware.
+                        Developed for personal use. Based on RepRap Marlin firmware.<br>
+                        For details click... <a href="./projects/" target="_blank">
+                        <u>here.</u></a>
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+                
+                <!-- Four Degree of Freedom arm Manipulator -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/dof4_manipulator_3.png');">
                     <p>
                         <b class="heading">Project: Four Degree of Freedom arm Manipulator </b>(2021)<br><br>
                         Designed and simulated a 4 DOF Robot manipulator in MSC-Adams software, to study 
-                        kinematic and dynamic behaviour of the robot in a pick and drop application.
+                        kinematic and dynamic behaviour of the robot in a pick and drop application.<br>
+                        For details click... <a href="./projects/" target="_blank">
+                        <u>here.</u></a>
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!-- Competition: Swadeshi Microprocessor Challenge -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Competition: Swadeshi Microprocessor Challenge </b>(2020-21)<br><br>
                         In space movement of human is extreme difficult and limited due to the complex deign 
@@ -309,11 +341,12 @@
                         part of the solution. This will be the first step in this area. At first, it will have 
                         a very basic task to do, like monitoring our Space Station form outside, documenting the 
                         work of astronauts in the space, keeping track of all activities, holding tools for 
-                        astronauts (wight will be a negligible factor in Space due to microgravity). 
+                        astronauts (wight will be a negligible factor in Space due to microgravity).
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!-- ARTPARK Robotics Challenge by IISc -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Competition: ARTPARK Robotics Challenge by IISc </b>(2021)<br><br>
                         A competition by IISc, Bangalore to make a manipulator placed on a mobile robot to 
@@ -323,8 +356,9 @@
                         top 30 teams.
                     </p>
                 </div>
-                
-                <div class = "section_contents">
+
+                <!-- Periyar U. Business Incubation Confederation -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Competition: Periyar U. Business Incubation Confederation </b>(2021)<br><br>
                         This competition was conducted to provide funding for selected idea. We presented an idea to 
@@ -333,8 +367,9 @@
                         power nearby street lights at night. We made to final presentation round. 
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!-- Toy hackathon by Government of Bharat -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Competition: Toy hackathon by Government of Bharat </b>(2021)<br><br>
                         Task was to provide an idea for a toy or game, which represents culture of Bharat. We presented 
@@ -342,16 +377,19 @@
                         Bharat, mostly which represent cultural history Bharat.
                     </p>
                 </div>
-    
-                <div class = "section_contents">
+
+                <!--  AIM by NITI Aayog -->
+                <div class = "section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <b class="heading">Competition: AIM by NITI Aayog, Government of Bharat </b>(2021)<br><br>
                     </p>
                 </div>
             </div>
 
-            <div id="tab_welcome" class="tabcontent"> <!-- tab contents for welcome section -->
-                <div class="section_contents" id="section_contents">
+            <!-- Welcome section -->
+            <div id="tab_welcome" class="tabcontent"> 
+
+                <div class="section_contents" id="section_contents" style="background-image: url('../resources/media/index/pictures/about_AI_robot.jpg');">
                     <p>
                         
                         <b class="heading">Do visit following pages</b><br><br>
@@ -382,10 +420,12 @@
                         </button>
                     </p>
                 </div>
+
             </div>
 
-            <div id="tab_publications" class="tabcontent"> <!-- tab contents for publications section -->
-                <div class="section_contents">
+            <!-- Publications section -->
+            <div id="tab_publications" class="tabcontent"> 
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/Publication_pen.png');">
                     <p>
                         <b class="heading">IFAC - ScienceDirect</b><br><br>
                         <i>Low-Cost Path Planning in 2D Environment using A* Algorithm by Considering Slope of the Obstacle - 2022.</i><br><br>
@@ -401,8 +441,9 @@
                 </div>
             </div>
 
-            <div id="tab_blogs" class="tabcontent"> <!-- tab contents for blogs section blog section-->
-                <div class="section_contents">
+            <!-- Blogs section-->
+            <div id="tab_blogs" class="tabcontent"> 
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/blog_typwriter.png');">
                     <p>
                         <b class="heading">Click following link to visit blog page or scroll down</b><br><br>
                         <button class="download_button" >
@@ -414,15 +455,16 @@
                     </p>
                 </div>
 
-                <div class="section_contents">
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/');">
                     <p>
                         <a href="./blogs/blog_read.html" target="_blank"><b class="heading">Blog/Article 1</b></a><br><br>
                     </p>
                 </div>
             </div>
 
-            <div id="tab_photography" class="tabcontent"> <!-- tab contents for photography section-->
-                <div class="section_contents">
+            <!-- Photography section-->
+            <div id="tab_photography" class="tabcontent"> 
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/photography_camera.png');">
                     <p>
                         <b class="heading">Click following link to visit photography page</b><br><br>
                         <button class="download_button" >
@@ -435,20 +477,29 @@
                 </div>
             </div>
 
-            <div id="tab_contacts" class="tabcontent"> <!-- tab contents for contacts sections-->
-                <div class="section_contents">
+            <!-- Contacts sections-->
+            <div id="tab_contacts" class="tabcontent"> 
+                <div class="section_contents" style="background-image: url('../resources/media/index/pictures/contact_mail.png');">
                     <p>
                         <b class="heading">Contact using following</E-Mail></b><br><br>
                         <button class="download_button">
-                            <a href="mailto: shivamjaiswal095.work@gmail.com" class="a_1">
+                            <a href="mailto: shivamjaiswal095.work@gmail.com" class="a_1" title="Write an E-Mail">
                                 &ensp;<i class="fas fa-envelope" id="link_icon_format"></i>
                                 &ensp;shivamjaiswal095.work@gmail.com
                             </a>
                         </button><br><br>
+
                         <button class="download_button">
-                            <a href="https://www.linkedin.com/in/shivam-bharat/" target="_blank" class="a_1">
+                            <a href="https://www.linkedin.com/in/shivam-bharat/" target="_blank" class="a_1" title="Linkedin profile">
                                 &ensp;<i class="fab fa-linkedin" id="link_icon_format"></i>
                                 &ensp;shivam-bharat
+                            </a>
+                        </button><br><br>
+
+                        <button class="download_button">
+                            <a href="https://github.com/shivam-jswl" target="_blank" class="a_1" title="GitHub profile">
+                                &ensp;<i class="fa-brands fa-github" id="link_icon_format"></i>
+                                &ensp;shivam-jswl
                             </a>
                         </button>
 
@@ -464,6 +515,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <div id="phone_menu_button">
             <button onclick="phone_menu_button()">

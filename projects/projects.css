@@ -25,12 +25,11 @@
 
         font-family: 'Times New Roman', Times, serif;
         color: black;
-    }
+    }    
 
     .profile_link{
         float: right;
         margin-right: 10px;
-        /* font-weight: 900; */
     }
     
     a:link, a:active, a:visited, a:hover{
@@ -722,12 +721,12 @@
 
     .close_image{
         position: fixed;
-        right: 50px;
-        top: 50px;  
-        color: black;
+        right: 25px;
+        top: 25px;  
+        color: rgb(255, 255, 255);
         font-weight: 900;
         cursor: pointer;
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .caption{

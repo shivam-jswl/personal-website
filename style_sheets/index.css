@@ -194,6 +194,10 @@
         font-weight: 500;
     }
 
+    .section_contents p a:hover{
+        font-size: unset;
+    }
+
     #link_icon_format{
         color: red;
     }
@@ -201,119 +205,12 @@
     #phone_menu_button{
         display: none;
     }
-
-    /* Qualification backgrounds */
-    #tab_qualifications .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/master_quadraped_1.png");
-    }
-
-    #tab_qualifications .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/bachelor_manipulator_3.png");
-    }
-
-    #tab_qualifications .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/drone.png");
-    }
-
-
-
-    /* Experience background */
-    #tab_experience .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures");
-    }
-
-    #tab_experience .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/csir.jpg");
-    }
-
-    #tab_experience .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/");
-    }
-
-
-    /* Skills background */
-    #tab_skills .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/core_knowledge-Devi-saraswati_laptop.jpg");
-    }
-    
-    #tab_skills .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/Skills_Laptop.png");
-    }
-    
-    #tab_skills .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/cocurriculars_humanoid_hand.png");
-    }
-
-    /* projects background */
-    #tab_projects .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures");
-    }
-
-    #tab_projects .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/d_star_map.png");
-    }
-    
-    #tab_projects .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/dof6_manipulator_3.png");
-    }
-    
-    #tab_projects .section_contents:nth-child(4){
-        background-image: url("../resources/media/index/pictures/printer_print_head.png");
-    }
-    
-    #tab_projects .section_contents:nth-child(5){
-        background-image: url("../resources/media/index/pictures/dof4_manipulator_3.png");
-    }
-    
-    #tab_projects .section_contents:nth-child(6){
-        background-image: url("../resources/media/index/pictures/");
-    }
-
-    #tab_projects .section_contents:nth-child(7){
-        background-image: url("../resources/media/index/pictures/");
-    }
-    
-    #tab_projects .section_contents:nth-child(8){
-        background-image: url("../resources/media/index/pictures/");
-    }
-    
-    #tab_projects .section_contents:nth-child(9){
-        background-image: url("../resources/media/index/pictures/");
-    }
-    
-    #tab_projects .section_contents:nth-child(10){
-        background-image: url("../resources/media/index/pictures/");
-    }
     
     /* welcome background */
     #tab_welcome .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/about_AI_robot.jpg");
+        /* background-image: url("../resources/media/index/pictures/about_AI_robot.jpg"); */
         background-position-x: 55vw;
        
-    }
-
-    /* Publication background */
-    #tab_publications .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/Publication_pen.png");
-    }
-    
-    /* Blog background */
-    #tab_blogs .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/blog_typwriter.png");
-    }
-
-    #tab_publications .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/");
-    }
-    
-    /* photography background */
-    #tab_photography .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/photography_camera.png");
-    }
-    
-    /* Contacts background */
-    #tab_contacts .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/contact_mail.png");
     }
     
 }
@@ -371,7 +268,7 @@
         position: absolute;
         top: 50vh;
         left:3vw;
-        font-size: 2vw;
+        font-size: 3.5vw;
         width: 65vw;
         text-align: justify;
         text-justify: inter-word;
@@ -538,19 +435,19 @@
 
     /* Qualification backgrounds */
     #tab_qualifications .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/master_quadraped_1.png");
+        /* background-image: url("../resources/media/index/pictures/master_quadraped_1.png"); */
         background-size: 70vw;
         background-position-x: 50vw;
     }
 
     #tab_qualifications .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/bachelor_manipulator_3.png");
+        /* background-image: url("../resources/media/index/pictures/bachelor_manipulator_3.png"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
 
     #tab_qualifications .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/drone.png");
+        /* background-image: url("../resources/media/index/pictures/drone.png"); */
         background-size: 80vw;
         background-position-x: 30vw;
 
@@ -558,92 +455,95 @@
 
 
     /* Experience background */
-    #tab_experience .section_contents:nth-child(1){
+    /* #tab_experience .section_contents:nth-child(1){
         background-image: url("../resources/media/index/pictures");
-    }
+    } */
 
     #tab_experience .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/csir.jpg");
+        /* background-image: url("../resources/media/index/pictures/csir.jpg"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
 
-    #tab_experience .section_contents:nth-child(3){
+    /* #tab_experience .section_contents:nth-child(3){
         background-image: url("../resources/media/index/pictures/");
-
-    }
+    } */
 
 
     /* Skills background */
     #tab_skills .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/core_knowledge-Devi-saraswati_phone.jpg");
+        /* background-image: url("../resources/media/index/pictures/core_knowledge-Devi-saraswati_phone.jpg"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
     
     #tab_skills .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/Skills_Laptop.png");
+        /* background-image: url("../resources/media/index/pictures/Skills_Laptop.png"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
     
     #tab_skills .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/cocurriculars_humanoid_hand.png");
+        /* background-image: url("../resources/media/index/pictures/cocurriculars_humanoid_hand.png"); */
         background-size: 70vw;
         background-position-x: 20vw;
     }
 
     /* projects background */
-    #tab_projects .section_contents:nth-child(1){
+    /* #tab_projects .section_contents:nth-child(1){
         background-image: url("../resources/media/index/pictures");
-    }
+    } */
 
-    #tab_projects .section_contents:nth-child(2){
-        background-image: url("../resources/media/index/pictures/d_star_map.png");
+    /* #tab_projects .section_contents:nth-child(2){
+        background-image: url("../resources/media/index/pictures");
+    } */
+
+    #tab_projects .section_contents:nth-child(3){
+        /* background-image: url("../resources/media/index/pictures/d_star_map.png"); */
         background-size: 100vh;
     }
     
-    #tab_projects .section_contents:nth-child(3){
-        background-image: url("../resources/media/index/pictures/dof6_manipulator_3.png");
+    #tab_projects .section_contents:nth-child(4){
+        /* background-image: url("../resources/media/index/pictures/dof6_manipulator_3.png"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
     
-    #tab_projects .section_contents:nth-child(4){
-        background-image: url("../resources/media/index/pictures/printer_print_head.png");
+    #tab_projects .section_contents:nth-child(5){
+        /* background-image: url("../resources/media/index/pictures/printer_print_head.png"); */
         background-size: 80vw;
         background-position-x: 17vw;
     }
     
-    #tab_projects .section_contents:nth-child(5){
-        background-image: url("../resources/media/index/pictures/dof4_manipulator_3.png");
+    #tab_projects .section_contents:nth-child(6){
+        /* background-image: url("../resources/media/index/pictures/dof4_manipulator_3.png"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
     
-    #tab_projects .section_contents:nth-child(6){
+    /* #tab_projects .section_contents:nth-child(7){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
 
-    #tab_projects .section_contents:nth-child(7){
+    /* #tab_projects .section_contents:nth-child(8){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
     
-    #tab_projects .section_contents:nth-child(8){
+    /* #tab_projects .section_contents:nth-child(9){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
     
-    #tab_projects .section_contents:nth-child(9){
+    /* #tab_projects .section_contents:nth-child(10){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
     
-    #tab_projects .section_contents:nth-child(10){
+    /* #tab_projects .section_contents:nth-child(11){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
     
     /* welcome background */
     #tab_welcome .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/about_AI_robot.jpg");
+        /* background-image: url("../resources/media/index/pictures/about_AI_robot.jpg"); */
         background-size: 90vw auto;
         background-position-x: 60vw;
 
@@ -651,32 +551,32 @@
 
     /* Publication background */
     #tab_publications .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/Publication_pen.png");
+        /* background-image: url("../resources/media/index/pictures/Publication_pen.png"); */
         background-size: 70vw;
         background-position-x: 30vw;
     }
     
     /* Blog background */
     #tab_blogs .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/blog_typwriter.png");
+        /* background-image: url("../resources/media/index/pictures/blog_typwriter.png"); */
         background-size: 90vw;
         background-position-x: 10vw;
     }
 
-    #tab_publications .section_contents:nth-child(2){
+    /* #tab_publications .section_contents:nth-child(2){
         background-image: url("../resources/media/index/pictures/");
-    }
+    } */
     
     /* photography background */
     #tab_photography .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/photography_camera.png");
+        /* background-image: url("../resources/media/index/pictures/photography_camera.png"); */
         background-size: 150vw;
         background-position-x: 25vw;
     }
     
     /* Contacts background */
     #tab_contacts .section_contents:nth-child(1){
-        background-image: url("../resources/media/index/pictures/contact_mail.png");
+        /* background-image: url("../resources/media/index/pictures/contact_mail.png"); */
         background-size: 65vw;
         background-position-x: 32vw;
     }
