@@ -80,38 +80,61 @@
                 Project media
             </h2>
             <div>
-
-                <div>
-                    <img src="./template_pic/pink.png">
-                    <div onclick="imageViewer('./template_pic/pink.png', 'bjk fgfg skdfsdgfOG O;G Vgig ghig yufg of wgfgf')">
-                        bjk fgfg skdfsdgfOG O;G Vgig ghig yufg of wgfgf
+                <div class="image_selector">
+                    <img src="template_pic/pink.png">
+                    <div onclick="imageViewer('template_pic/pink.png')" note="bjk fhello world">
+                        bjk fgfg skdfsdgfOG O;G Vgig ghig yufg ofdf 
                     </div>
                 </div>
 
-                <div>
-                    <img src="./template_pic/black.png">
-                    <div onclick="imageViewer('./template_pic/black.png', 'bjkfg fgs kdf sdgfOGO; GHVgig ghig yufg of wgfgf')">
+                <div class="image_selector">
+                    <img src="template_pic/black.png">
+                    <div onclick="imageViewer('template_pic/black.png')" note="bjkfg fgs kdf sdgfOGO; GHVgig ghig yufg of wgfgf">
                         bjkfg fgs kdf sdgfOGO; GHVgig ghig yufg of wgfgf
                     </div>
                 </div>
 
-                <div>
-                    <img src="./template_pic/red.png">
-                    <div onclick="imageViewer('./template_pic/red.png', 'bjkf gfgsk dfsdgf OGO; GHVgi g ghig yufg of wgfgf')">
-                        bjkf gfgsk dfsdgf OGO; GHVgi g ghig yufg of wgfgf
+                <div class="image_selector">
+                    <img src="template_pic/red.png">
+                    <div onclick="imageViewer('template_pic/red.png')" note="bjkf gfgsk dfsdgf OGO; GHVgi g ghig yufg of wgf">
+                        bjkf gfgsk dfsdgf OGO; GHVgi g ghig yufg of tukt
                     </div>
                 </div>
 
-                <div>
-                    <img src="./template_pic/pink.png">
-                    <div onclick="imageViewer('./template_pic/pink.png', 'bjkfgfgskdf sdgfOG O;GHVg g ghig yufg of wgfgf')">
-                        bjkfgfgskdf sdgfOG O;GHVg g ghig yufg of wgfgf
+                <div class="image_selector">
+                    <img src="template_pic/pink.png">
+                    <div onclick="imageViewer('template_pic/pink.png')" note="bjkfgfgskdf sdgfOG O;GHVg g ghig yufg of wgfgf">
+                        bjkfgfgskdf sdgfOG O;GHVg g ghig yufg of piiol
                     </div>
                 </div>
 
-                <div>
-                    <img src="./template_pic/blue.png">
-                    <div onclick="imageViewer('./template_pic/blue.png', 'bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf')">
+                <div class="image_selector">
+                    <img src="template_pic/blue.png">
+                    <div onclick="imageViewer('template_pic/blue.png')" note='bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf'>
+                        bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of qqs
+                    </div>
+                </div>
+
+                <div class="image_selector">
+                    <img src="template_pic/video.mp4" style="display: none;" id="is_video">
+                    <img src="template_pic/blue.png">
+                    <div onclick="imageViewer('template_pic/video.mp4')" note='video'>
+                        bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf
+                    </div>
+                </div>
+
+                <div class="image_selector">
+                    <img src="template_pic/video_1.mp4" style="display: none;" id="is_video">
+                    <img src="template_pic/black.png">
+                    <div onclick="imageViewer('template_pic/video_1.mp4')" note='video_1'>
+                        bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf
+                    </div>
+                </div>
+
+                <div class="image_selector">
+                    <img src="template_pic/video_2.mp4" style="display: none;" id="is_video">
+                    <img src="template_pic/pink.png">
+                    <div onclick="imageViewer('template_pic/video_2.mp4')" note='video_2'>
                         bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf
                     </div>
                 </div>
@@ -121,8 +144,21 @@
 
         <div class="image_show" id="image_show_id">
             <span class="close_image" id="close_image_id" onclick="closeme()">X</span>
+            <span class="left_image" id="left_image_id" onclick="move_img(-1)">&lt;</span>
+            <span class="right_image" id="right_image_id" onclick="move_img(1)">&gt;</span>
             <img src = "" id = "image_place">
             <div class="caption" id="caption_insert"></div>
+        </div>
+
+        <div class="video_show" id="video_show_id">
+            <span class="close_image" id="close_image_id" onclick="closeme()">X</span>
+            <span class="left_image" id="left_image_id" onclick="move_img(-1)">&lt;</span>
+            <span class="right_image" id="right_image_id" onclick="move_img(1)">&gt;</span>
+            <video controls id="video_place" muted >
+                <source src="" tpye="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="caption" id="caption_insert_vid"></div>
         </div>
 
 

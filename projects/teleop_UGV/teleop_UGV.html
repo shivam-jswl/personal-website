@@ -73,57 +73,111 @@
             </article>
         </div>
 
-<!-- Images with caption and on image caption on scroll goes here -->
-<div class="images_captions">
-    <h2>    <!--Heading-->
-        Project media
-    </h2>
-    <div>
-
+    <!-- Images with caption and on image caption on scroll goes here -->
+    <div class="images_captions">
+        <h2>    <!--Heading-->
+            Project media
+        </h2>
         <div>
-            <img src="./">
-            <div onclick="imageViewer('./', '')">
-                bjk fgfg skdfsdgfOG O;G Vgig ghig yufg of wgfgf
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_1.JPG">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_1.JPG')" note='CAD-model of autonomous jeep (side view).'>
+                    CAD-model of autonomous jeep (side view).
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img src="./">
-            <div onclick="imageViewer('./', '')">
-                bjkfg fgs kdf sdgfOGO; GHVgig ghig yufg of wgfgf
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_2.JPG">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_2.JPG')" note='CAD-model of autonomous jeep (front view).'>
+                    CAD-model of autonomous jeep (front view).
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img src="./">
-            <div onclick="imageViewer('./', '')">
-                bjkf gfgsk dfsdgf OGO; GHVgi g ghig yufg of wgfgf
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_3.JPG">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_3.JPG')" note='Drawing of autonomous jeep (side view).'>
+                    Drawing of autonomous jeep (side view).
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img src="./">
-            <div onclick="imageViewer('./', '')">
-                bjkfgfgskdf sdgfOG O;GHVg g ghig yufg of wgfgf
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_4.JPG">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_4.JPG')" note='Drawing of autonomous jeep (front view).'>
+                    Drawing of autonomous jeep (front view).
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img src="./">
-            <div onclick="imageViewer('./', '')">
-                bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_frames.png">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_frames.png')" note='Frames and transparent view of autonomous jeep model.'>
+                    Frames and transparent view of autonomous jeep model.
+                </div>
             </div>
-        </div>
 
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_rviz-gazebo.png">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_rviz-gazebo.png')" note='Demonstration of Lidar sensor and camera in Gazebo and rviz.'>
+                    Demonstration of Lidar sensor and camera in Gazebo and rviz.
+                </div>
+            </div>
+
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_5.png">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_5.png')"  note='STL of autonomous jeep (side view).'>
+                    STL of autonomous jeep (side view).
+                </div>
+            </div>
+
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_6.png">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_6.png')" note='STL of autonomous jeep (side view).'>
+                    STL of autonomous jeep (side view).
+                </div>
+            </div>
+
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_camera.JPG">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_camera.JPG')" note='Camera CAD model (attached in front of the autonomous jeep).'>
+                    Camera CAD model (attached in front of the autonomous jeep).
+                </div>
+            </div>
+
+            <div class="image_selector">
+                <img src="./resources/autonomous_jeep_steering_initial.png">
+                <div onclick="imageViewer('./resources/autonomous_jeep_steering_initial.png')" note='Test CAD model with its frame and links.'>
+                    Test CAD model.
+                </div>
+            </div>
+<!-- 
+            <div class="image_selector">
+                <img src="template_pic/video.mp4" style="display: none;" id="is_video">
+                <img src="./template_pic/pink.png">
+                <div onclick="videoViewer('./template_pic/video.mp4')" note='bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf'>
+                    bjkfgf gskd fsdg fOGO;G HVgig ghig yufg of wgfgf
+                </div>
+            </div> -->
+
+        </div>
     </div>
-</div>
 
-<div class="image_show" id="image_show_id">
-    <span class="close_image" id="close_image_id" onclick="closeme()">X</span>
-    <img src = "" id = "image_place">
-    <div class="caption" id="caption_insert"></div>
-</div>
+    <div class="image_show" id="image_show_id">
+        <span class="close_image" id="close_image_id" onclick="closeme()">X</span>
+        <span class="left_image" id="left_image_id" onclick="move_img(-1)">&lt;</span>
+        <span class="right_image" id="right_image_id" onclick="move_img(1)">&gt;</span>
+        <img src = "" id = "image_place">
+        <div class="caption" id="caption_insert"></div>
+    </div>
 
+    <div class="video_show" id="video_show_id">
+        <span class="close_image" id="close_image_id" onclick="closeme()">X</span>
+        <span class="left_image" id="left_image_id" onclick="move_img(-1)">&lt;</span>
+        <span class="right_image" id="right_image_id" onclick="move_img(1)">&gt;</span>
+        <video controls id="video_place" muted >
+            <source src="" tpye="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <div class="caption" id="caption_insert_vid"></div>
+    </div>
 
 
         <!-- Tools knowledge and links here -->
